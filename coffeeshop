@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <section>
+      <header>
+        <img src="images/header01.jpg" alt="Coffee shop logo"/>
+      </header>
+
+      <nav>
+        <ul>
+          <li><a href="#">About Our Roasters</a></li>
+          <li><a href="#"></a>Fresh Baked Goods</li>
+          <li><a href="#">About Our Shops</a></li>
+          <li><a href="#">Events &amp; Happenings</a></li>
+        </ul>
+      </nav>
+
+      <article>
+        <p>Come visit our shop on 121 Main Street. We are open every day from 7am to midnight.
+        We serve only the best, most wholesome, organic, free trade coffee, plus we offer a selection of
+        fresh home-baked goods for when you are feeling peckish</p>
+        <p>We have a great atmosphere for meeting up with friends or working quietly on your own projects.
+        There are lots of tables and couches to make everyone comfortable and welcome.</p>
+        <p>Visit us today!</p>
+      </article>
+
+      <footer>
+        <p>121 Main Street, Sometown, CA 95111<br>
+          Open 7am - Midnight, daily</p>
+      </footer>
+    </section>
+  </body>
+</html>
