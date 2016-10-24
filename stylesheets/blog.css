@@ -64,17 +64,18 @@ img {
 }
 
 body {
-	    margin: 10px 150px 10px 150px;
+	    margin: 0 auto;
 			background: #7B68EE;
+			width: 1070px;
 }
 
 .aside {
     float: right;
-    height: 600px;
     width: 250px;
-    margin: 0 0 20px;
     line-height: 2;
-		background: rgba(0, 0, 139, 0.5)
+		background: rgba(0, 0, 139, 0.5);
+		padding: 5px 10px 10px;
+		min-height: 200px;
 }
 
 .main {
