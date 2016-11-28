@@ -129,7 +129,10 @@ h3 {
 }
 
 h4 {
-	padding: 1em 5em 2em;
+	padding: 1% 26% 4%;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    color: grey;
 }
 
 p{
@@ -271,8 +274,8 @@ h2{
 footer ul li {
 	display:inline;
 	float: right;
-	padding: 0 2em;
-  font-size: 1.8em;
+	padding: 0 5%;
+  font-size: 140%;
 	font-family: 'Handlee', cursive;
 }
 
@@ -311,8 +314,9 @@ figcaption{
   transition: opacity .5s;
 }
 figure figcaption:hover{
-  transition: opacity .5s;
+  transition: all .5s;
   opacity: 1;
+  box-shadow: 0 0 0 2.7em rgba(0,0,0, .3);
 }
 
 .homeimage {
