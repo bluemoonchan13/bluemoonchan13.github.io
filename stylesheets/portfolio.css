@@ -1,0 +1,383 @@
+
+/* Css Reset begins */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Css Reset ends */
+
+/* CSS begins */
+
+/********** Font's I'm using *****************
+
+font-family: 'Indie Flower', cursive;
+font-family: 'Pontano Sans', sans-serif;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Poiret One', cursive;
+font-family: 'Handlee', cursive;
+********************************/
+
+
+
+/**************************** Global css functions - start *****************/
+.clearfix:after {
+   content: ".";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+/*************************** Global css functions -end ********************/
+
+
+
+
+/************************** Navigation *********************************/
+
+header ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: rgba(192, 192, 192, 0.3);
+    position: fixed;
+    height: auto;
+    overflow: auto;
+}
+
+header ul li a {
+	display: block;
+color: #000;
+padding: 10% 0 10% 20%;
+text-decoration: none;
+font-family: 'Handlee', cursive;
+}
+
+header ul li a:hover:not(.active) {
+    background-color: cadetblue;
+    color: white;
+}
+
+/************************* Navigation Ends ******************************/
+
+
+
+/*************************General Page CSS ******************************/
+
+img {
+	width:100%;
+	height: auto;
+	background:black;
+}
+
+.me img {
+	width:50%;
+	margin-left:25%;
+}
+
+article {
+	margin: 5% auto;
+width: 40em;
+}
+
+h3 {
+	font-size: 3em;
+    font-family: 'Indie Flower', cursive;
+    color: cadetblue;
+}
+
+h4 {
+	padding: 1em 5em 2em;
+}
+
+p{
+	line-height: 130%;
+padding: 3% 0 2%;
+font-family: 'Pontano Sans', sans-serif;
+}
+
+
+.slides {
+	padding:0;
+	width: 609px;
+	height: 420px;
+	display: block;
+	margin:0 auto;
+	position: relative;
+}
+
+.slides * {
+	user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+}
+
+.slides input {display:none;}
+
+.slide-container {display:block;}
+
+.slide {
+	top: 0;
+	opacity: 0;
+	width: 609px;
+	height: 420px;
+	display: block;
+	position: absolute;
+
+	transform: scale(0);
+
+	transition: all .7s ease-in-out;
+}
+
+.slide img {
+	width:100%;
+	height:100%;
+}
+
+.nav label {
+	width:30%;
+	height: 100%;
+	display:none;
+	position:absolute;
+	opacity:0;
+	z-index:9;
+	cursor:pointer;
+	transition:opacity .2s;
+	color:#FFF;
+	font-size:156pt;
+	text-align:center;
+	line-height:380px;
+	font-family: 'Pontano Sans', sans-serif;
+	background-color: rgba(255, 255, 255, .3);
+	text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label {
+	opacity:0.5;
+}
+
+.nav label:hover {
+	opacity:1;
+}
+
+.nav .next {
+	right:0;
+}
+
+input:checked + .slide-container .slide {
+	opacity: 1;
+	transform: scale(1);
+	transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label{
+	display: block;
+}
+
+.daylight .slide img {
+	-moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+}
+
+/********************************* General Page CSS Ends *************************/
+
+
+
+
+
+/*********************************	Footer CSS Begins	****************************/
+
+footer {
+	padding: 3%;
+	background: cadetblue;
+}
+
+h1 a {
+	text-decoration:none;
+	color:white;
+}
+
+h2 a {
+	text-decoration:none;
+	color:black;
+}
+
+h1 {
+	display:inline;
+	float:left;
+	padding:0 0.5em;
+	font-size: 3em;
+    font-family: 'Shadows Into Light', cursive;
+		line-height:10%;
+}
+
+h2{
+	display:inline;
+	float:left;
+	padding:0;
+	line-height:250%;
+	font-family: 'Poiret One', cursive;
+}
+
+footer ul li {
+	display:inline;
+	float: right;
+	padding: 0 2em;
+  font-size: 1.8em;
+	font-family: 'Handlee', cursive;
+}
+
+footer ul li a {
+	text-decoration:none;
+	color:black;
+}
+
+/*********************************	Footer CSS Ends	****************************/
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * *	Home Page Css - START * * * * * * * * * * * * * * * * * * * * **/
+
+.homeimage figure{
+	float:left;
+	width:16.666666%;
+}
+
+figure {
+	width:100%;
+	height:auto;
+	margin:0;
+	padding:0;
+}
+
+figcaption{
+  position: absolute;
+  top: 0;
+  color: #fff;
+  background: rgba(0,0,0, .3);
+  font-size: .8em;
+  padding: 8px 12px;
+  opacity: 0;
+  transition: opacity .5s;
+}
+figure figcaption:hover{
+  transition: opacity .5s;
+  opacity: 1;
+}
+
+.homeimage {
+	position:relative;
+}
+
+
+.homeimage a:hover img{
+	transition: all 0.3s ease;
+-webkit-transform: scale(1.3);
+-ms-transform: scale(1.3);
+transform: scale(1.3);
+box-shadow: inset 0 0 0 25px #53a7ea;
+}
+
+
+
+.homeimage figure figcaption{
+  position: absolute;
+  top: 0;
+  color: #fff;
+  background: rgba(0,0,0, .3);
+  font-size: .8em;
+  padding: 20% 12px;
+  opacity: 0;
+  transition: opacity .5s;
+	width: 15%;
+	line-height: 250%;
+	font-family: 'Handlee', cursive;
+}
+
+
+.homeimage figure:hover figcaption{
+  transition: opacity .5s;
+  opacity: 1;
+}
+
+/****************************************** Home Page Css - END*****************************************/
+
+
+
+/*****************************************	Responsive CSS Begins	**************************************/
+
+@media screen and (max-width: 1050px){
+    header ul {
+        width:100%;
+        height:auto;
+        position:relative;
+    }
+    header ul li a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {margin-left:0;}
+		.homeimage figure img {display:none;}
+		.homeimage figure img.mobile {display:block !important;}
+		.homeimage figure {width:100%;}
+}
+
+@media screen and (max-width: 400px){
+    header ul li a {
+        text-align: center;
+        float: none;
+}
+
+/*****************************************	Responsive CSS Ends	**************************************/
+
+/* CSS ends */
