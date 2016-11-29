@@ -244,23 +244,12 @@ footer {
 	background: cadetblue;
 }
 
-h1 a {
-	text-decoration:none;
-	color:white;
-}
-
-h2 a {
-	text-decoration:none;
-	color:black;
-}
-
 h1 {
 	display:inline;
 	float:left;
 	padding:0 0.5em;
 	font-size: 3em;
-    font-family: 'Shadows Into Light', cursive;
-		line-height:10%;
+	line-height:10%;
 }
 
 h2{
@@ -271,17 +260,40 @@ h2{
 	font-family: 'Poiret One', cursive;
 }
 
+h1 a {
+	text-decoration:none;
+	font-family: 'Shadows Into Light', cursive;
+	color:white;
+}
+
+h1 a:hover {
+	color:grey;
+}
+
+h2 a {
+	text-decoration:none;
+	color:black;
+}
+
+h2 a:hover{
+	color:white;
+}
+
 footer ul li {
 	display:inline;
 	float: right;
 	padding: 0 5%;
   font-size: 140%;
-	font-family: 'Handlee', cursive;
 }
 
 footer ul li a {
 	text-decoration:none;
 	color:black;
+	font-family: 'Handlee', cursive;
+}
+
+footer ul li a:hover{
+	color:white;
 }
 
 /*********************************	Footer CSS Ends	****************************/
@@ -348,6 +360,10 @@ box-shadow: inset 0 0 0 25px #53a7ea;
 	font-family: 'Handlee', cursive;
 }
 
+.homeimage figure figcaption strong{
+	font-size: x-large;
+font-family: 'Indie Flower', cursive;
+}
 
 .homeimage figure:hover figcaption{
   transition: opacity .5s;
