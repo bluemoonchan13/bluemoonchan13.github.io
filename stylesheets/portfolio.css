@@ -353,6 +353,7 @@ figcaption{
 	width: 15%;
 	line-height: 250%;
 	font-family: 'Handlee', cursive;
+	height:100%;
 }
 
 .homeimage figure figcaption strong{
@@ -371,7 +372,6 @@ figure figcaption:hover{
 -webkit-transform: scale(1.3);
 -ms-transform: scale(1.3);
 transform: scale(1.3);
-box-shadow: inset 0 0 0 25px #53a7ea;
 }
 
 
@@ -379,6 +379,10 @@ box-shadow: inset 0 0 0 25px #53a7ea;
   transition: opacity .5s;
   opacity: 1;
 }
+
+.homeimage figure:hover:after img {}
+
+.homeimage figure:hover img:after {}
 
 /****************************************** Home Page Css - END*****************************************/
 
